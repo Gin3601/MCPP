@@ -10,7 +10,7 @@ from fastapi import FastAPI, UploadFile, File, HTTPException
 from app.services.MCPP_main import run as main_run, ServiceError
 from app.utils.logger import get_logger
 
-logger = get_logger()
+logger = get_logger("main")
 
 app = FastAPI(title="MCPP Image API")
 

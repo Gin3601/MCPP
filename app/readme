@@ -1,0 +1,4 @@
+docker build -t mcpp-api .
+docker run -d --name mcpp -p 8900:8900 mcpp-api
+docker ps
+docker logs -f mcpp
