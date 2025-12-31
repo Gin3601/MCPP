@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+requests
+python-dotenv
+python-multipart
+pydantic>=2.0
+pydantic-settings>=2.0
