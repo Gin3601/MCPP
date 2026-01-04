@@ -176,7 +176,7 @@ PROMPTS = {
     The structure must match: the top banner + the product area + the four functional blocks at the bottom.
     All the text must exactly match what is provided.
     """.strip(),
-
+    # ======================================================  
     "ground": """
     Create a high-quality overhead (top-down) dinner table scene 1:1photo for a party / holiday meal.
     INPUT IMAGE USAGE (MUST FOLLOW EXACTLY):
@@ -202,6 +202,35 @@ PROMPTS = {
     - No text overlays, no icons, no labels.
     """.strip(),
     # ======================================================
+    # ground2
+    "ground2": """
+    Please take the pattern picture I uploaded as the sole and final source of the printed texture.
+    The pattern content must remain 100% original and no design changes of any form are allowed, including but not limited to:
+    No redrawing, no color change, no re-arrangement, no alteration of proportion, no change of line thickness, no alteration of text content or font, and no addition or deletion of any pattern elements are allowed.
+    Patterns can only be understood as completed printed pattern resources, rather than design elements that can be recreated.
+    The use of patterns is limited to printing textures in the real world
+    Only the pattern is allowed to be adhered to the surface of the paper plate and/or napkin in a realistic printing effect.
+    Only necessary perspective bending, realistic physical light and shadow, and slight paper and printing grain texture are allowed.
+    Any illustration, cartoonization, stylization, 3D rendering, toy-like texture or virtual material presentation is strictly prohibited.
+    The final image must be a realistic photography of an e-commerce product in the real world, rather than a concept drawing or design drawing. The specific requirements are as follows:
+    Use a white or light-colored tablecloth or desktop with real fabric or desktop texture
+    A circular paper plate is placed in the cente
+    The pattern is truly printed on the surface of the paper plate
+    Place solid-colored tableware of a color similar to the theme on the paper plate
+    A square napkin is placed under the paper plate, and the surface of the napkin is also printed with the same pattern realistically
+    A few golden scraps of paper are naturally dotted on the desktop
+    A few random small decorative items may appear at the edge of the desktop, but they must not cover the main body of the patterns and text
+    The photography style must be:
+    Natural soft light, high resolution, clear focus, true shadows, clean composition, standard e-commerce product photography.
+    The following situations are regarded as incorrect results once they occur and must be avoided:
+    The patterns are redesigned, colored, rearranged, repainted or stylized
+    The text content is incorrect, missing, mirrored, garbled or replaced
+    It presents a cartoonish, illustrative, 3D, rendered or toy-like texture
+    Characters, hands, brand logos, watermarks and signatures appear
+    The picture is blurry, with low clarity, excessive blurring or severe noise
+    Please strictly abide by all the above rules when generating images.
+""".strip(),
+    # ======================================================
     # main
     "main": """
     你将收到 4 张图片：
@@ -222,6 +251,10 @@ PROMPTS = {
     - 背景保持纯白，输出亚马逊风格 1:1 电商产品图
     输出：一张与 images[0] 同构图的白底1:1产品图，完成三处贴图替换。
     """.strip(),
+
+
+
+
 }
 
 def get_prompt(name: str) -> str:
